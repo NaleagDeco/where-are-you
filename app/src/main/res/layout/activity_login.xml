@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/etEmail"
         android:layout_gravity="center_horizontal"
         android:text="email address" />
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/etPassword"
         android:layout_gravity="center_horizontal"
         android:text="password" />
 
@@ -41,13 +41,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
-            android:id="@+id/button2" />
+            android:id="@+id/btnSignUp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:id="@+id/button" />
+            android:id="@+id/btnLogin" />
     </LinearLayout>
 
 </LinearLayout>
