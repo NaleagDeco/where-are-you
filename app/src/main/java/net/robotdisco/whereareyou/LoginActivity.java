@@ -49,8 +49,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         switch(view.getId()) {
             case R.id.btnLogin:
                 login();
+                break;
             case R.id.btnSignUp:
                 signUp();
+                break;
         }
     }
 
@@ -62,7 +64,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                         if (user != null) {
                             // Hooray! The user is logged in.
                         } else {
-                            Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT);
+                            Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -78,7 +80,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                 if (e == null) {
                     // Hooray! Let them use the app now.
                 } else {
-                    Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT);
+                    Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
